@@ -5,7 +5,7 @@ echo ==============================================
 
 if not exist target\classes mkdir target\classes
 dir /s /B src\main\java\*.java > sources.txt
-javac @sources.txt -d target\classes
+javac -encoding UTF-8 @sources.txt -d target\classes
 
 if %errorlevel% neq 0 (
     echo.
